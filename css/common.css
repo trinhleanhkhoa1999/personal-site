@@ -2,6 +2,12 @@
     padding: 0;
     margin: 0;
 }
+:root{
+    --bg:#e0ebe8;
+    --colorMenu:#61b6af;
+    --colorH1:#45b29a;
+    --colorTitle:#45b29a;
+}
 .bg{
-    background-color: #e0ebe8;
+    background-color: var(--bg);
 }

@@ -16,7 +16,7 @@
 }
 .nav-menu a {
    text-decoration: none;
-   color: #61b6af;
+   color: var(--colorMenu);
    margin: 0 25px;
    transition: 0.4s;
 
@@ -46,10 +46,10 @@
  .title-container .title-main{
     font-size: 80px;
     font-family: cursive;
-    color: #56b5a0;
+    color: var(--colorTitle);;
  }
  .title-container p{
-    color: #45b29a;
+    color: var(--colorH1);;
  }
  .earth-holder {
     display: flex;
@@ -65,7 +65,7 @@
     border-radius: 50%;
  }
  .introduce h1{
-    color: #45b29a;
+    color: var(--colorH1);;
     margin: 30px 0;
  }
  .introduce p{
@@ -79,7 +79,7 @@
 
  }
  .skill .skill-title{
-    color: #1e836c;
+    color: var(--colorTitle);;
     font-size: 70px;
     font-weight: 400;
  }
@@ -108,7 +108,7 @@
     max-width: 350px;
  }
  .skill-content h1{
-    color: #45b29a;
+    color: var(--colorH1);;
     margin: 30px 0;
  }
  .skill-content p{
@@ -121,12 +121,12 @@
     margin: 100px 0;
  }
  .help .help-title{
-    color: #1e836c;
+    color: var(--colorTitle);;
     font-size: 70px;
     font-weight: 400;
  }
  .help h1{
-    color: #45b29a;
+    color: var(--colorH1);;
     margin: 30px 0;
  }
  .help p{
@@ -139,7 +139,7 @@
     width: 200px;
     height: 50px;
     border: none;
-    background: #45b29a;
+    background: var(--colorH1);;
     cursor: pointer;
     transition: 0.4s;
  }
@@ -164,7 +164,7 @@
  .menu-footer a {
     padding: 50px 0;
     text-decoration: none;
-    color: #61b6af;
+    color: var(--colorMenu);
     margin: 0 25px;
     transition: 0.4s;
  
@@ -174,9 +174,9 @@
  footer p{
     padding: 10px 0;
     text-align: center;
-    color: #45b29a;
+    color: var(--colorH1);;
 
  }
  footer p a{
-    color: #45b29a;
+    color: var(--colorH1);;
  }
