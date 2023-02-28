@@ -1,9 +1,12 @@
 .menu-container{
     height: 120px;
-
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    top:0;  
+    width: 100%;
+    
 }
 
 .logo-menu img{
@@ -30,6 +33,7 @@
     text-align: center;
     padding: 80px 0;
     position: relative;
+    margin-top: 120px;
  }
  .title-container .cloud-left{
   position: absolute;
