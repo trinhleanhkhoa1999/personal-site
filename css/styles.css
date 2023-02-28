@@ -1,0 +1,182 @@
+.menu-container{
+    height: 120px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-menu img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.nav-menu a:first-child{
+    color: #21564b;
+}
+.nav-menu a {
+   text-decoration: none;
+   color: #61b6af;
+   margin: 0 25px;
+   transition: 0.4s;
+
+   font-size: 18px;
+   font-family: 'Courier New', Courier, monospace;
+}
+.nav-menu a:hover {
+    color: #21564b;
+ }
+ .title-container{
+    text-align: center;
+    padding: 80px 0;
+    position: relative;
+ }
+ .title-container .cloud-left{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-left: 300px;
+ }
+ .title-container .cloud-right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 300px;
+   }
+ .title-container .title-main{
+    font-size: 80px;
+    font-family: cursive;
+    color: #56b5a0;
+ }
+ .title-container p{
+    color: #45b29a;
+ }
+ .earth-holder {
+    display: flex;
+    justify-content: center;
+ }
+ .introduce{
+    text-align: center;
+    margin: 100px 0;
+ }
+ .introduce img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+ }
+ .introduce h1{
+    color: #45b29a;
+    margin: 30px 0;
+ }
+ .introduce p{
+    max-width: 300px;
+    margin: auto;
+   font-size: 20px;
+ }
+ .skill{
+    text-align: center;
+    margin: 100px 0;
+
+ }
+ .skill .skill-title{
+    color: #1e836c;
+    font-size: 70px;
+    font-weight: 400;
+ }
+ .skill-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .skill-container .skill-logo img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+ }
+ .skill-container .skill-icon i{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #f3f2f1;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+ }
+ .skill-content{
+    max-width: 350px;
+ }
+ .skill-content h1{
+    color: #45b29a;
+    margin: 30px 0;
+ }
+ .skill-content p{
+    max-width: 300px;
+    margin: auto;
+   font-size: 20px;
+ }
+ .help{
+    text-align: center;
+    margin: 100px 0;
+ }
+ .help .help-title{
+    color: #1e836c;
+    font-size: 70px;
+    font-weight: 400;
+ }
+ .help h1{
+    color: #45b29a;
+    margin: 30px 0;
+ }
+ .help p{
+    max-width: 600px;
+    margin: auto;
+    font-size: 20px;
+ }
+ .help button{
+    margin: 30px 0;
+    width: 200px;
+    height: 50px;
+    border: none;
+    background: #45b29a;
+    cursor: pointer;
+    transition: 0.4s;
+ }
+ .help button:hover{
+    background: #3a9682;
+ }
+ .help a{
+    text-decoration: none;
+    color: black;
+ }
+ .help i{
+   margin: 0 10px;
+    color: #69c0ad;
+ }
+
+
+ .menu-footer{
+    display: flex;
+    justify-content: center;
+    gap:30px
+ }
+ .menu-footer a {
+    padding: 50px 0;
+    text-decoration: none;
+    color: #61b6af;
+    margin: 0 25px;
+    transition: 0.4s;
+ 
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+ }
+ footer p{
+    padding: 10px 0;
+    text-align: center;
+    color: #45b29a;
+
+ }
+ footer p a{
+    color: #45b29a;
+ }
