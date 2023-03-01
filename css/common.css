@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+html{
+    font-size: 20px;
+}
 :root{
     --bg:#e0ebe8;
     --colorMenu:#61b6af;
