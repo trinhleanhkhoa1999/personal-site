@@ -40,13 +40,13 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  margin-left: 15rem;
+  margin-left: 20rem;
  }
  .title-container .cloud-right{
     position: absolute;
     right: 0;
     top: 0;
-    margin-right: 15rem;
+    margin-right: 20rem;
    }
  .title-container .title-main{
     font-size: 4rem;

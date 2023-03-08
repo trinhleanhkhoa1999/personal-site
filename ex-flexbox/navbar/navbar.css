@@ -1,0 +1,35 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    font-weight: 900;
+    padding: 20px 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border: 1px solid #d1cece;
+    box-shadow: 5px 10px 8px #888888;
+}
+.nav .nav-logo{
+    background-image:url(../assets/img-logo.jpg) ;
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 0 50px;
+}
+.nav .nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    margin: 0 100px;
+}
+.nav .nav-menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
