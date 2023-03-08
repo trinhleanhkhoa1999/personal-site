@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.nav{
+    background-color: red;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+}
+.container .content-img{
+    background-color: aquamarine;
+    width: 50%;
+    height: 600px;
+    overflow: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.container .content-img .item{
+    height: 200px;
+    width: 40%;
+    border: 1px solid;
+    margin: 20px 0 ;
+
+}
+.container .content-map{
+    background-color: blue;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
