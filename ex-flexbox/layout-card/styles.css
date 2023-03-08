@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.title-container{
+    display: flex;
+    align-items: baseline;
+    gap: 30px;
+}
+.title-container h1{
+    margin-left: 80px;
+    font-size: 30px;
+}
+.title-container p{
+    font-weight: 600;
+    color: #5e5e5d;
+
+}
+.wrap{
+    margin-left:  300px;
+    margin-right: 100px;
+}
+.header{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.header .header-item1{
+    background-color: #8d0085;
+    width: 50%;
+    height: 150px;
+}
+.header .header-item2{
+    background-color: yellow;
+    width: 25%;
+    height: 150px;
+}
+.list-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.item{
+    height:450px;
+    width: 350px;
+    border: 1px solid;
+    margin: 20px 0;
+}
