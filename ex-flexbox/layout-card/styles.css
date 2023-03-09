@@ -19,6 +19,7 @@
 .wrap{
     margin-left:  300px;
     margin-right: 100px;
+    
 }
 .header{
     padding: 20px 0;
@@ -39,10 +40,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    height:500px;
 }
 .item{
-    height:450px;
-    width: 350px;
+    display: flex;
+    justify-content: center;
+    height:100%;
+    width: 30%;
     border: 1px solid;
     margin: 20px 0;
 }
