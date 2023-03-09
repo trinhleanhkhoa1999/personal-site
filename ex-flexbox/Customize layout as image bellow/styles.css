@@ -3,6 +3,13 @@
     margin: 0;
 }
 
+body{
+    overflow: hidden;
+}
+.wrap{
+    display: flex;
+    flex-direction: column;
+}
 .nav{
     background-color: red;
     height: 100px;
@@ -12,26 +19,32 @@
 }
 .container{
     display: flex;
+    height: calc(100vh - 100px);
 }
 .container .content-img{
-    /* background-color: aquamarine; */
-    width: 50%;
-    height: 600px;
+    background-color: aquamarine;
+    /* height: 900px;
+    overflow: auto; */
+
     overflow: auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 0 20px;
     flex-wrap: wrap;
+    flex: 1;
+    /* width: 50%; */
 }
 .container .content-img .item{
     height: 200px;
-    width: 40%;
+    width: 47%;
     border: 1px solid;
-    margin: 20px 0 ;
+    margin-top: 20px;
 
 }
 .container .content-map{
-    /* background-color: blue; */
-    width: 50%;
+    background-color: blue;
+    /* width: 50%; */
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -15,7 +15,7 @@ h1{
     box-shadow: 5px 10px 8px #888888;
 }
 .nav .nav-logo{
-    background-image:url(../assets/img-logo.jpg) ;
+    background-image:url(../../assets/img-logo.jpg) ;
     background-size: cover;
     height: 100px;
     width: 100px;
