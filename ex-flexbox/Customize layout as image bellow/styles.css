@@ -22,7 +22,7 @@ body{
     height: calc(100vh - 100px);
 }
 .container .content-img{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     /* height: 900px;
     overflow: auto; */
 
@@ -42,7 +42,7 @@ body{
 
 }
 .container .content-map{
-    background-color: blue;
+    /* background-color: blue; */
     /* width: 50%; */
     flex: 1;
     display: flex;
