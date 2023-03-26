@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h5,h3,p{
+    margin: 0 ;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+    background-color: #eeeeee;
+}
+.card-title{
+    font-weight: 400;
+}
+.info{
+    background-color: #fffbea;
+    border-radius: 20%;
+    padding: 10px 0;
+   
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    font-size: 20px;
+    font-weight:600 ;
+    color: #ffe27b;
+    cursor: pointer;
+}
