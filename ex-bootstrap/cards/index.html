@@ -17,7 +17,7 @@
   </head>
   <body>
     <div class="container bg-light p-5">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="row row-cols-1 row-cols-md-3 g-4 mx-5">
         <div class="col">
           <div class="card h-100 rounded-3">
             <div class="card-body">
@@ -26,16 +26,25 @@
                   <img src="../../assets/monkey-face-svgrepo-com.svg" alt="" />
                 </div>
                 <div class="col-5 me-auto mx-2">
-                  <h5>Mailchimp</h5>
+                  <h6>Mailchimp</h6>
                   <p>1 days ago</p>
                 </div>
-                <div class="col-4">
-                  <sapn class="info">Design</sapn>
+                <div class="col-3">
+                  <span
+                    class="tt"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Deign"
+                  >
+                    <button type="button" class="info" data-bs-dismiss="modal">
+                      Deign
+                    </button>
+                  </span>
                 </div>
               </div>
-              <h2 class="card-title py-5 pe-5 text-start">
+              <h3 class="card-title py-5 pe-5 text-start">
                 Senior Product Design-Singgapore
-              </h2>
+              </h3>
               <div class="progress">
                 <div
                   class="progress-bar bg-danger"
@@ -47,7 +56,7 @@
                 ></div>
               </div>
               <div class="d-flex align-items-center">
-                <h5 class="me-1">32 Applied</h5>
+                <h6 class="me-1">32 Applied</h6>
                 <p>0f 50 capacity</p>
               </div>
             </div>
@@ -61,16 +70,25 @@
                   <img src="../../assets/basketball-svgrepo-com.svg" alt="" />
                 </div>
                 <div class="col-5 me-auto mx-2">
-                  <h5>Dribbble</h5>
+                  <h6>Dribbble</h6>
                   <p>4 days ago</p>
                 </div>
-                <div class="col-4">
-                  <sapn class="info">Product</sapn>
+                <div class="col-3">
+                  <span
+                    class="tt"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Product"
+                  >
+                    <button type="button" class="info" data-bs-dismiss="modal">
+                      Product
+                    </button>
+                  </span>
                 </div>
               </div>
-              <h2 class="card-title py-5 pe-5 text-start">
+              <h3 class="card-title py-5 pe-5 text-start">
                 Junior Product Design-Singgapore
-              </h2>
+              </h3>
               <div class="progress">
                 <div
                   class="progress-bar bg-danger"
@@ -82,7 +100,7 @@
                 ></div>
               </div>
               <div class="d-flex align-items-center">
-                <h5 class="me-1">42 Applied</h5>
+                <h6 class="me-1">42 Applied</h6>
                 <p>0f 70 capacity</p>
               </div>
             </div>
@@ -99,16 +117,25 @@
                   />
                 </div>
                 <div class="col-5 me-auto mx-2">
-                  <h5>Reddit</h5>
+                  <h6>Reddit</h6>
                   <p>2 days ago</p>
                 </div>
-                <div class="col-4">
-                  <sapn class="info">Design</sapn>
+                <div class="col-3">
+                  <span
+                    class="tt"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Deign"
+                  >
+                    <button type="button" class="info" data-bs-dismiss="modal">
+                      Deign
+                    </button>
+                  </span>
                 </div>
               </div>
-              <h2 class="card-title py-5 pe-5 text-start">
+              <h3 class="card-title py-5 pe-5 text-start">
                 Sofware Architect Jave - USA
-              </h2>
+              </h3>
               <div class="progress">
                 <div
                   class="progress-bar bg-danger"
@@ -120,7 +147,7 @@
                 ></div>
               </div>
               <div class="d-flex align-items-center">
-                <h5 class="me-1">52 Applied</h5>
+                <h6 class="me-1">52 Applied</h6>
                 <p>0f 100 capacity</p>
               </div>
             </div>
@@ -134,5 +161,12 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
+    <!-- Đoạn script kích hoạt tooltip bootstrap toàn bộ thẻ span có class .tt  -->
+    <script>
+      const tooltip = document.querySelectorAll(".tt");
+      tooltip.forEach((t) => {
+        new bootstrap.Tooltip(t);
+      });
+    </script>
   </body>
 </html>
