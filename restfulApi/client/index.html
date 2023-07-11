@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <style src="./styles.css"></style>
+    <title>Restful api</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <b id="nameHeader">Create User </b>
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <div class="mb-3">
+                <label class="form-label">Id: </label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="id"
+                  placeholder="Id..."
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Name: </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Name..."
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email: </label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Email..."
+                />
+              </div>
+              <div type="button" id="btnCreate" class="btn btn-warning">
+                Submit
+              </div>
+              <div type="button" id="btnEdit" class="btn btn-warning d-none">
+                Update
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="wapper">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody id="list-users"></tbody>
+      </table>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

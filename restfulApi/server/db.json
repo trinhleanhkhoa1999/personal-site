@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "test1",
+      "email": "test1@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "test2",
+      "email": "lan@gmail.com"
+    },
+    {
+      "id": "3",
+      "name": "KNK",
+      "email": "trinhleanhkhoa1999@gmail.com"
+    },
+    {
+      "id": "4",
+      "name": "KNK",
+      "email": "trinhleanhkhoa1999@gmail.com"
+    },
+    {
+      "id": 5,
+      "name": "KNK",
+      "email": "trinhleanhkhoa1999@gmail.com"
+    },
+    {
+      "id": 6,
+      "name": "test",
+      "email": "ngoc@gmail.com"
+    }
+  ]
+}
