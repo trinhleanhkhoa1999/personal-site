@@ -1,59 +1,50 @@
 const api = "http://localhost:3000/users";
+
+const inputId = document.querySelector("#id");
+const inputName = document.querySelector("#name");
+const inputEmail = document.querySelector("#email");
+
 const btnCreate = document.querySelector("#btnCreate");
 const nameHeader = document.querySelector("#nameHeader");
 
 const handleCreateUser = async () => {
-  btnCreate.onclick = async () => {
-    const idInput = document.querySelector("#id");
-    const nameInput = document.querySelector("#name");
-    const emailInput = document.querySelector("#email");
+  const id = inputId.value;
+  const name = inputName.value;
+  const email = inputEmail.value;
 
-    const id = idInput.value.trim();
-    const name = nameInput.value.trim();
-    const email = emailInput.value.trim();
-
-    if (!id || !name || !email) {
-      return;
-    }
-
-    try {
-      const response = await fetch(api, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          id: +id,
-          name: name,
-          email: email,
-        }),
-      });
-      const data = await response.json();
-      console.log(data);
+  try {
+    const res = await fetch(api, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        id: +id,
+        name: name,
+        email: email,
+      }),
+    });
+    if (res.ok) {
+      render();
       idInput.value = "";
       nameInput.value = "";
       emailInput.value = "";
-    } catch (err) {
-      alert("An error occurred", err);
+      return res.json();
     }
-  };
+  } catch (err) {
+    console.log(err);
+    alert("An error occurred");
+  }
 };
 
-handleCreateUser();
+btnCreate.onclick = () => handleCreateUser();
 
-const handleDeleteUser = (id) => {
-  fetch(`${api}/${id}`, {
+const handleDeleteUser = async (id) => {
+  const res = await fetch(`${api}/${id}`, {
     method: "DELETE",
-    headers: {
-      "Content-Type": "application/json",
-    },
-  })
-    .then((res) => res.json())
-    .then((data) => {
-      console.log(data);
-      alert(`Success deleted users with id: ${id}`);
-    });
-  1;
+  });
+  render();
+  return res.json();
 };
 
 const handleEditUser = async (userId) => {
@@ -78,7 +69,7 @@ const handleEditUser = async (userId) => {
   nameHeader.innerHTML = "UpLoad Users";
   btnEdit.onclick = async () => {
     try {
-      const response = await fetch(`${api}/${userId}`, {
+      const res = await fetch(`${api}/${userId}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -90,9 +81,12 @@ const handleEditUser = async (userId) => {
         }),
       });
 
-      if (response.ok) {
-        const data = await response.json();
-        console.log(data);
+      if (res.ok) {
+        render();
+        idInput.value = "";
+        nameInput.value = "";
+        emailInput.value = "";
+        return res.json();
       } else {
         throw new Error("An error occurred");
       }
@@ -103,26 +97,23 @@ const handleEditUser = async (userId) => {
   };
 };
 
-const handleShowUser = async () => {
-  const response = await fetch(api);
-  const data = await response.json();
+const render = async () => {
+  const res = await fetch(api);
+  const data = await res.json();
   const html = data.map((item) => {
     return `
-      <tr>
-        <th scope="row">${item.id}</th>
-        <td>${item.name}</td>
-        <td>${item.email}</td>
-        <td>
-          <button data-id="${item.id}" data-name="${item.name}" data-email="${item.email}" 
-          class="btn btn-warning" onclick="handleEditUser(${item.id})">Edit</button>
-          <button class="btn btn-danger" onclick="handleDeleteUser(${item.id})">Delete</button>
-        </td>
-      </tr>
+    <tr>
+      <td scope="row">${item.id}</td>
+      <td>${item.name}</td>
+      <td>${item.email}</td>
+      <td>
+        <button data-id="${item.id}" data-name="${item.name}" data-email="${item.email}" 
+        class="btn btn-warning" onclick="handleEditUser(${item.id})">Edit</button>
+        <button class="btn btn-danger" onclick="handleDeleteUser(${item.id})">Delete</button>
+      </td>
+    </tr>
     `;
   });
   document.querySelector("#list-users").innerHTML = html.join("");
-
-  return data;
 };
-
-handleShowUser();
+render();
